@@ -1,0 +1,41 @@
+.text {
+    text-align: center;
+    font-size: 18px;
+    color: #b24a25;
+}
+
+.underline {
+    text-align: center;background-image: linear-gradient(to right,#be9673 0%,#c29248 100%);
+      background-repeat: no-repeat;
+      background-size: 80% 0.15em;
+      background-position: 50% 88%;
+      transition: background-size 0.25s ease-in;
+}
+
+.chenar {
+    margin: 50px;
+    margin: 30px;
+    
+    border: 1px solid #cccccc;
+    box-shadow: 0 20px 60px 0 rgba(15,16,18,0.24);
+    min-height: 150px;
+}
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 250px;
+}
+
+.tablePrices{
+    margin-left: 50px;
+}
+
+.tdPrices {
+    padding-right: 100px;
+}
+
+.listLash {
+    background: #e4bb9e59;
+    color: #795548;
+}

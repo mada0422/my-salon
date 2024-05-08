@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Plus</title>
+  <link rel="stylesheet" href="./style/styles.css">
+</head>
+
+<body>
+  <script>
+    let d = new Date();
+    console.log("date", d)
+    document.body.innerHTML = "<p>Today's date is " + d + "</p>"
+
+    function light(sw) {
+      var pic;
+      if (sw == 0) {
+        pic = "./images/clinta.jpg"
+      } else {
+        pic = "./images/gene.jpg"
+      }
+      document.getElementById('myImage').src = pic;
+    }
+    function fun() {
+      var x = document.getElementById("frm1").value;
+      alert("Hi" + " " + x +" "+ "you have successfully submitted the details");
+    }  
+  </script>
+  <div>
+    <h2 style="margin: 0;
+    line-height: 2.4;">
+      <p class="underline">
+        Beauty plus
+      </p>
+    </h2>
+
+    <p id="sal"></p>
+    <div class="chenar">
+      <p class="text">Brow Lamination & Lash Lift: Lift Your Brows AND Your Lashes</p>
+      <p style="margin: 10px;
+      text-align: center;
+      color: #a47225;
+  ">Lash lamination is a treatment that is performed directly on the natural lashes,
+        through a thorough lifting process and, if necessary, coloring.
+        The main purpose of this procedure is to nourish the hair,
+        enriching the structure of the hair both inside and outside with keratin and vitamins,
+        giving it elasticity and shine, overall a visibly healthier appearance.
+        The whole procedure allows both the arching of very straight eyelashes
+        and the arrangement of tangled eyelashes.</p>
+
+
+    </div>
+    <div class="chenar">
+      <table>
+        <tr>
+          <td> <img id="myImage" src="./images/clinta.jpg"></td>
+          <td>
+            <p class="text">LASH LIFT “DON’TS” IN THE FIRST 24 HOURS AFTER TREATMENT</p>
+            <ul class="listLash">
+              <li>Don’t get your eyelashes wet</li>
+              <li>Don’t apply mascara or eye makeup</li>
+              <li>Don’t sweat</li>
+              <li>Don’t go into a sauna</li>
+              <li>Don’t use oil-based products</li>
+              <li>Don’t rub your eyes</li>
+            </ul>
+          </td>
+          <!-- <td>
+              <img src="./images/gene.jpg">
+            </td> -->
+        </tr>
+      </table>
+      <button type="button" onclick="light(1)">First Image</button>
+      <button type="button" onclick="light(0)">Second Image</button>
+    </div>
+    <div class="chenar">
+      <p class="text">Price List</p>
+      <table class="tablePrices">
+        <tr>
+          <td class="tdPrices">
+            <h4> Eyelashes/Eyebrows and Dyeing</h4>
+            <ol>
+              <li>Eyelash lift 25£</li>
+              <li>Eyebrows lift 30£</li>
+            </ol>
+          </td>
+          <td class="tdPrices">
+            <h4>Dyeing</h4>
+            <ol>
+              <li> Eyelashes 5£</li>
+              <li>Eyebrows 5£</li>
+            </ol>
+          </td>
+        </tr>
+      </table>
+
+
+    </div>
+    <div class="chenar">
+
+      <p class="text"> Bikini? Brazilian? Hollywood?
+        Pick your favourite waxing treatment and be summer-ready in no time at our comfortable salon.</p>
+
+      <aside style="text-align: center;">
+        <img src="./images/wax.jpg">
+      </aside>
+    </div>
+
+    <div class="chenar">
+      <p class="text">Price List Waxing</p>
+      <ol>
+        <li>Full Arms 15£</li>
+        <li>Half Arms 12£</li>
+        <li>Upper Lip 4£</li>
+        <li>Whole Face 13£</li>
+        <li>Underarms 10£</li>
+        <li>Full Legs 18£</li>
+        <li>Half Legs 13£</li>
+        <li>Bikini 12£</li>
+        <li>Hollywood 25£</li>
+        <li>Brazilian 20£</li>
+        <li>Full Body 50£</li>
+      </ol>
+
+    </div>
+    <div class="chenar">
+      <p class="text"> I am waiting for you in a warm and welcoming space for wax treatment,
+        eyelash/eyebrow lamination and eyelash/eyebrow dyeing ❤️</p>
+    </div>
+    <div class="chenar">
+      <aside>
+        <img src="./images/room.jpg" />
+
+       
+        <p id="demo"></p>
+        <p id="sal"></p>
+        <div>
+          <h3>Contacts</h3>
+          <div>
+            <a href="tel:+447423608114">
+              <span>C:</span>
+              +447423608114
+            </a>
+          </div>
+          <div>
+            <a href="ancaioana1998@yahoo.com">
+              <span>E:</span>
+              ancaioana1998@yahoo.com
+            </a>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <div class="chenar">
+      <form onsubmit="fun()">
+        <label><b>Enter your name:</b></label><br>
+        <input type="text" name="uname" id="frm1"><br>
+        <label><b>Enter your Email-address:</b></label><br>
+        <input type="email" name="email"><br>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+   
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
